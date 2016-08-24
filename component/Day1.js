@@ -25,7 +25,10 @@ export default class Stopwatch extends Component {
       <View style={day1Style.container}>
         <View style={{height: 60}}></View>
         <Header mainTime={this.state.mainTime}/>
-        <Buttons startTime={this._startTime} stopTime={this._stopTime} stopWatch={this}/>
+        <Buttons
+          startTime={this._startTime}
+          stopTime={this._stopTime}
+          stopWatch={this}/>
         <ListView
           dataSource={this.state.dataSource}
           renderRow={this._renderRow}
@@ -97,12 +100,16 @@ class Buttons extends Component {
   render() {
     return (
       <View style={day1Style.buttons}>
-        <TouchableOpacity style={day1Style.button} onPress={this.props.startTime.bind(this.props.stopWatch)}>
+        <TouchableOpacity
+          style={day1Style.button}
+          onPress={this.props.startTime.bind(this.props.stopWatch)}>
           <Text>
             start
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={day1Style.button} onPress={this.props.stopTime.bind(this.props.stopWatch)}>
+        <TouchableOpacity
+          style={day1Style.button}
+          onPress={this.props.stopTime.bind(this.props.stopWatch)}>
           <Text>
             End
           </Text>

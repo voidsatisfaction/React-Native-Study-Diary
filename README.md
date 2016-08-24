@@ -1,2 +1,3 @@
 # React-Native-Study-Diary
-practice of '30 days of RN '
+
+It is a practice of '30 days of RN'
