@@ -39,7 +39,6 @@ export default class Stopwatch extends Component {
         <Header
           totalMainTime={this.state.totalMainTime}
           totalSubTime={this.state.totalSubTime}
-          timeSeperation={this._timeSeperation.bind(this)}
         />
         <Buttons
           btnFuncL={this.state.btnFuncL.bind(this)}
