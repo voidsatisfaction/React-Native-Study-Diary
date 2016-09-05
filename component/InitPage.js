@@ -30,7 +30,7 @@ export default class InitPage extends Component {
           day: "Day2",
           title: "WeatherApp",
           iconName: "ios-partly-sunny",
-          pageKey: "PageTwo",
+          pageKey: "Day2",
           color: "#90bdc1",
         },
         {
